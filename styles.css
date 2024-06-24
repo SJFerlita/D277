@@ -1,0 +1,102 @@
+/* || General Styles */
+* {
+   color: #FFFEF9; 
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    background: url(https://cdn.pixabay.com/photo/2019/03/11/00/18/south-carolina-4047531_1280.jpg);
+}
+
+main {
+    display: flex;
+    background-color: rgba(19,0,38,.8);
+    width: auto;
+    margin: 20px 20px;
+}
+
+section {
+    margin: 20px 20px;
+}
+
+img {
+    width: 33%;
+}
+
+hr {
+    color: #130026;
+}
+
+div, main, section, .nav-links {
+    border-radius: 5px;
+}
+/* || Header */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(99,53,149,0.75);
+    padding: 10px;
+}
+
+.logo {
+    width: 10%;
+    border-radius: 50%;
+}
+
+nav {
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    font-size: 100%;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .nav-button {
+    font-size: 100%;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+nav a:hover, .dropdown:hover, .nav-button {
+    background-color: #2E0261;
+}
+
+.nav-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.nav-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.nav-content:hover {
+    background-color: #2E0261;
+}
+.dropdown:hover .nav-content {
+    display: block;
+}
+/* || Main Content */
+
+/* || Footer */
