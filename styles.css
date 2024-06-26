@@ -1,18 +1,22 @@
 /* || General Styles */
 * {
-   color: #FFFEF9; 
-   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    color: #FFFEF9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 body {
     background: url(https://cdn.pixabay.com/photo/2019/03/11/00/18/south-carolina-4047531_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
 }
 
 main {
-    display: flex;
-    background-color: rgba(19,0,38,.8);
-    width: auto;
-    margin: 20px 20px;
+    width: 100%;
+    min-height: 350px;
+    margin-top: 20px;
+    padding-left: 25px;
 }
 
 section {
@@ -24,18 +28,40 @@ img {
 }
 
 hr {
-    color: #130026;
+    border: none;
+    background-color: rgba(19, 0, 38, .8);
+    height: 2px;
+    min-width: 500px;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
-div, main, section, .nav-links {
+div,
+main,
+section,
+.nav-links {
     border-radius: 5px;
 }
+
+h1 {
+    font-size: 30px;
+}
+
+P,
+li {
+    font-size: 15px;
+}
+
+aside {
+    margin: auto;
+}
+
 /* || Header */
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(99,53,149,0.75);
+    background-color: rgba(99, 53, 149, 0.75);
     padding: 10px;
 }
 
@@ -71,7 +97,9 @@ nav a {
     margin: 0;
 }
 
-nav a:hover, .dropdown:hover, .nav-button {
+nav a:hover,
+.dropdown:hover,
+.nav-button {
     background-color: #2E0261;
 }
 
@@ -94,9 +122,125 @@ nav a:hover, .dropdown:hover, .nav-button {
 .nav-content:hover {
     background-color: #2E0261;
 }
+
 .dropdown:hover .nav-content {
     display: block;
 }
+
 /* || Main Content */
 
+.parent-container {
+    display: flex;
+    min-width: 350px;
+    width: auto;
+    background-color: rgba(19, 0, 38, .8);
+    margin-top: 50px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.about-div {
+    width: auto;
+}
+
+.about-div p {
+    width: auto;
+    font-size: 15px;
+}
+
+.city-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3em;
+    padding-top: 0;
+}
+
+.city-1,
+.city-2,
+.city-3 {
+    height: 200px;
+    min-height: 75px;
+    min-width: 75px;
+    width: 33%;
+    margin: 1em 1em 1em 1em;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2), 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: 100px;
+}
+
+.city-1 {
+    background-size: 600%;
+    background-image: url(https://media.istockphoto.com/id/649416696/photo/columbia-south-carolina.jpg?s=1024x1024&w=is&k=20&c=m_4A8ArHQ87SnjmEw09j89W3ki1RryJkh-fTIY1pbpg=);
+    background-position: center;
+}
+
+.city-2 {
+    background-image: url(images/reedy-river-3996253_1920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.city-3 {
+    background-image: url(images/pexels-sara-free-495868646-18985754.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.city-link {
+    margin-bottom: -50%;
+    text-decoration: none;
+}
+
+.link-div {
+    background-color: rgba(19, 0, 38, .8);
+    border-radius: 0
+}
+
+.aside-div,
+aside {
+    margin: auto;
+    min-width: 100px;
+}
+
+#flag-img {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    max-width: 300px;
+    min-width: 100px;
+}
+
+.aside-div p {
+    font-size: 15px;
+    text-align: center;
+}
+
 /* || Footer */
+
+.footer-div {
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    justify-content: space-around;
+    background-color: rgba(19, 0, 38, .8);
+    min-width: 500px;
+}
+
+footer p {
+    margin: auto;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+.socials ul {
+    list-style: none;
+    margin: 0;
+}
+
+.socials li {
+    display: inline;
+    padding: 1px
+}

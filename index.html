@@ -5,15 +5,12 @@
 <head>
     <title>South Carolina</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <header id="header">
+    <header>
         <!-- Header information for website + state info -->
         <div class="container">
             <img class="logo" src="images/South Carolina.png" alt="South Carolina - Established 1917">
@@ -33,36 +30,41 @@
             </nav>
         </div>
     </header>
-    <main>
-        <section class="state-section">
-            <!-- Primary page content will go here -->
-            <h2>Looking for places to visit?</h2>
-            <p>Here are the most popular places to visit in each region of South Carolina:</p>
-            <ul>
-                <li class="links"><a href="Columbia.html">Columbia</a></li>
-                <li class="links"><a href="Charleston.html">Charleston</a></li>
-                <li class="links"><a href="Greenville.html">Greenville</a></li>
-            </ul>
-            <aside class="state-aside">
-                <!-- Content indirectly related to primary page content will go here -->
-                <img id="flag-img"
-                    src="https://cdn.britannica.com/14/4314-004-A1CFEB4A/state-flag-South-Carolina-Union-fort-palmetto-1861.jpg"
-                    alt="An image of the South Carolina State Flag. Centered is a white Palmetto tree, with a matching crescent moon in the upper left corner on a navy blue background.">
-                <p>Learn more about the state at the <a href="https://www.sc.gov/">South Carolina State Government</a> website.</p>
-            </aside>
-        </section>
-    </main>
-    <footer>
-        <!-- Author information, source links, and more will go here as needed -->
-        <hr>
-        <p>Made by Sam Ferlita for WGU</p>
-        <div class="socials">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/samuel-ferlita-552921191/">LinkedIn</a></li>
-                <li><a href="https://github.com/SJFerlita">GitHub</a></li>
-            </ul>
-        </div>
-    </footer>
+    <div class="parent-container">
+            <main>
+                <!-- Primary page content will go here -->
+                <h1>Looking for places to visit?</h1>
+                <p>Here are the most popular places to visit in each region of South Carolina:</p>
+                <div class="city-container">
+                    <div class="city-1"><div class="link-div"><a class="city-link" href="Columbia.html">Columbia</a></div></div>
+                    <div class="city-2"><div class="link-div"><a class="city-link" href="Greenville.html">Greenville</a></div></div>
+                    <div class="city-3"><div class="link-div"><a class="city-link" href="Charleston.html">Charleston</a></div></div>
+                </div>
+                <div class="aside-div">
+                    <aside id="state-aside">
+                        <!-- Content indirectly related to primary page content will go here -->
+                        <img id="flag-img"
+                            src="https://cdn.britannica.com/14/4314-004-A1CFEB4A/state-flag-South-Carolina-Union-fort-palmetto-1861.jpg"
+                            alt="An image of the South Carolina State Flag. Centered is a white Palmetto tree, with a matching crescent moon in the upper left corner on a navy blue background.">
+                        <p>Learn more at the <a href="https://www.sc.gov/">South Carolina State
+                                Government</a> website.</p>
+                    </aside>
+                </div>
+            </main>
+    </div>
+    <hr>
+    <div class="footer-div">
+        <footer>
+            <!-- Author information, source links, and more will go here as needed -->
+            <p>Made by Sam Ferlita for WGU</p>
+            <div class="socials">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/samuel-ferlita-552921191/">LinkedIn</a></li>
+                    <li><a href="https://github.com/SJFerlita">GitHub</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
