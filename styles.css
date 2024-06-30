@@ -22,10 +22,6 @@ main {
     padding-left: 25px;
 }
 
-section {
-    margin: 20px 20px;
-}
-
 img {
     width: 33%;
 }
@@ -56,11 +52,13 @@ li {
     font-size: 15px;
 }
 
-aside {
+form {
+    max-width: 75%;
     margin: auto;
 }
 
-form {
+aside {
+    margin: auto;
 }
 
 /* || Header */
@@ -141,7 +139,7 @@ nav a:hover,
 
 /* || Main Content */
 
-.parent-container {
+.parent-container, .form-div {
     display: flex;
     min-width: 600px;
     width: auto;
@@ -152,7 +150,7 @@ nav a:hover,
 }
 
 .about-div {
-    width: auto;
+    max-width: 80%;
 }
 
 .about-p {
@@ -215,12 +213,11 @@ nav a:hover,
     border-radius: 0
 }
 
-.aside-div {
-    float: right;
-    flex-wrap: wrap;
-}
 .aside-div,
 aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin: auto;
     min-width: 100px;
 }
@@ -245,6 +242,63 @@ aside {
     text-align: center;
 }
 
+#feedback-h2 {
+    margin: auto;
+    padding-bottom: 20px;
+}
+.form-div {
+    display: block;
+    min-width: 300px;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.name-group, .email-group {
+    display: flex;
+    width: 100%;
+    gap: 75px;
+}
+
+.text-div {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#textarea {
+    height: 100px;
+}
+
+.form-control {
+    padding: 5px;
+    width: 100%;
+    background-color: rgba(99, 53, 149, 0.75);
+    color:#FFFEF9;
+    border-radius: 5px;
+    border-color: #FFFEF9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.submit-div {
+    margin: auto;
+}
+
+#submit {
+    padding: 5px;
+    width: 25%;
+    background-color: rgba(99, 53, 149, 0.75);
+    border-radius: 5px;
+    border-color: #FFFEF9;
+    margin: auto;
+    color: #FFFEF9;
+}
 /* || Footer */
 
 .footer-div {
@@ -262,6 +316,10 @@ footer p {
 
 .socials a {
     text-decoration: none;
+}
+
+.socials a:hover {
+    color: rgba(99, 53, 149, 1)
 }
 
 .socials ul {
