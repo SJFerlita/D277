@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <title></title>
         <link rel="stylesheet" href="styles.css">
@@ -9,25 +9,77 @@
     </head>
     <body>
         <header>
-            <!-- Header for city introductory content -->
-            <nav>
-                <!-- Site navigation links will go here -->
-                <ul>
-                    <li><a href="cities.html">City</a></li>
-                    <li><a href="state.html">State</a></li>
-                </ul>
-            </nav>
+            <!-- Header information for website + state info -->
+            <div class="container">
+                <img class="logo" src="images/South Carolina.png" alt="South Carolina - Established 1917">
+                <nav>
+                    <!-- Site navigation links will go here -->
+                    <a class="nav-links" href="index.html">Home</a>
+                    <div class="dropdown">
+                        <button class="nav-button">Cities</button>
+                        <div class="nav-content">
+                            <a class="nav-links" href="Columbia.html">Columbia</a>
+                            <a class="nav-links" href="Charleston.html">Charleston</a>
+                            <a class="nav-links" href="Greenville.html">Greenville</a>
+                        </div>
+                    </div>
+                    <a class="nav-links" href="feedback.html">Feedback</a>
+                    <a class="nav-links" href="resources.html">Resources</a>
+                </nav>
+            </div>
         </header>
-        <main>
-            <section class="cities" id="">
+        <div class="parent-container">
+            <main>
+                <div class="about-div">
+                    <h1>State</h1>
+                    <p class="about-p">About</p>
+                    <p id="summary">Summary from Google</p>
+                </div>
                 <!-- Primary page content will go here -->
-                <aside>
-                    <!-- Content indirectly related to primary content will go here -->
+                <h2>Looking for places to visit?</h2>
+                <p>Here are the most popular places to visit in each region of South Carolina:</p>
+                <div class="city-container">
+                    <a class="city-link" href="Columbia.html">
+                    <div class="city-1">
+                        <div class="link-div">Columbia</div>
+                    </div>
+                    </a>
+                    <a class="city-link" href="Greenville.html">
+                    <div class="city-2">
+                        <div class="link-div">Greenville</div>
+                    </div>
+                    </a>
+                    <a class="city-link" href="Charleston.html">
+                    <div class="city-3">
+                        <div class="link-div">Charleston</div>
+                    </div>
+                    </a>
+                </div>
+            </main>
+            <div class="aside-div">
+                <aside id="state-aside">
+                    <!-- Content indirectly related to primary page content will go here -->
+                    <div class="img-div">
+                    <a href="" target="_blank">
+                        Related image
+                    </a>
+                    </div> 
+                        <p></p>
                 </aside>
-            </section>
-        </main>
-        <footer>
-            <!-- author information, source links, and more will go here as needed -->
-        </footer>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-div">
+            <footer>
+                <!-- Author information, source links, and more will go here as needed -->
+                <p>Made by Sam Ferlita for WGU</p>
+                <div class="socials">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/samuel-ferlita-552921191/">LinkedIn</a></li>
+                        <li><a href="https://github.com/SJFerlita">GitHub</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>

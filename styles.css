@@ -13,6 +13,9 @@ body {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
     min-height: 350px;
     margin-top: 20px;
@@ -28,6 +31,7 @@ img {
 }
 
 hr {
+    border-radius: 5px;
     border: none;
     background-color: rgba(19, 0, 38, .8);
     height: 2px;
@@ -56,6 +60,9 @@ aside {
     margin: auto;
 }
 
+form {
+}
+
 /* || Header */
 .container {
     display: flex;
@@ -63,6 +70,7 @@ aside {
     align-items: center;
     background-color: rgba(99, 53, 149, 0.75);
     padding: 10px;
+    min-width: 700px;
 }
 
 .logo {
@@ -119,8 +127,12 @@ nav a:hover,
     text-align: left;
 }
 
-.nav-content:hover {
+.nav-content {
     background-color: #2E0261;
+}
+
+.nav-content a:hover {
+    background-color: rgba(99, 53, 149, 0.75)
 }
 
 .dropdown:hover .nav-content {
@@ -131,7 +143,7 @@ nav a:hover,
 
 .parent-container {
     display: flex;
-    min-width: 350px;
+    min-width: 600px;
     width: auto;
     background-color: rgba(19, 0, 38, .8);
     margin-top: 50px;
@@ -143,13 +155,20 @@ nav a:hover,
     width: auto;
 }
 
-.about-div p {
+.about-p {
     width: auto;
     font-size: 15px;
 }
 
+#summary {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+
 .city-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding: 3em;
@@ -162,8 +181,8 @@ nav a:hover,
     height: 200px;
     min-height: 75px;
     min-width: 75px;
-    width: 33%;
-    margin: 1em 1em 1em 1em;
+    width: 175px;
+    margin: 1rem;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2), 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
     text-align: center;
     padding-top: 100px;
@@ -188,7 +207,6 @@ nav a:hover,
 }
 
 .city-link {
-    margin-bottom: -50%;
     text-decoration: none;
 }
 
@@ -197,18 +215,29 @@ nav a:hover,
     border-radius: 0
 }
 
+.aside-div {
+    float: right;
+    flex-wrap: wrap;
+}
 .aside-div,
 aside {
     margin: auto;
     min-width: 100px;
 }
 
+.img-div {
+    margin: auto;
+    width: 75%;
+}
+
 #flag-img {
     display: flex;
     justify-content: space-around;
     margin: auto;
+    width: 80%;
     max-width: 300px;
     min-width: 100px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2), 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .aside-div p {
