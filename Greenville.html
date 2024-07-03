@@ -1,85 +1,137 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <title></title>
-        <link rel="stylesheet" href="styles.css">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <header>
-            <!-- Header information for website + state info -->
-            <div class="container">
-                <img class="logo" src="images/South Carolina.png" alt="South Carolina - Established 1917">
-                <nav>
-                    <!-- Site navigation links will go here -->
-                    <a class="nav-links" href="index.html">Home</a>
-                    <div class="dropdown">
-                        <button class="nav-button">Cities</button>
-                        <div class="nav-content">
-                            <a class="nav-links" href="Columbia.html">Columbia</a>
-                            <a class="nav-links" href="Charleston.html">Charleston</a>
-                            <a class="nav-links" href="Greenville.html">Greenville</a>
-                        </div>
+
+<head>
+    <title>Greenville</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <!-- Header information for website + state info -->
+        <div class="container">
+            <img class="logo" src="images/South Carolina.png" alt="South Carolina - Established 1917">
+            <nav>
+                <!-- Site navigation links will go here -->
+                <a class="nav-links" href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="nav-button">Cities</button>
+                    <div class="nav-content">
+                        <a class="nav-links" href="Charleston.html">Charleston</a>
+                        <a class="nav-links" href="Columbia.html">Columbia</a>
+                        <a class="nav-links" href="Greenville.html">Greenville</a>
                     </div>
-                    <a class="nav-links" href="feedback.html">Feedback</a>
-                    <a class="nav-links" href="resources.html">Resources</a>
-                </nav>
-            </div>
-        </header>
-        <div class="parent-container">
-            <main>
-                <div class="about-div">
-                    <h1>State</h1>
-                    <p class="about-p">About</p>
-                    <p id="summary">Summary from Google</p>
                 </div>
-                <!-- Primary page content will go here -->
-                <h2>Looking for places to visit?</h2>
-                <p>Here are the most popular places to visit in each region of South Carolina:</p>
-                <div class="city-container">
-                    <a class="city-link" href="Columbia.html">
+                <a class="nav-links" href="resources.html">Resources</a>
+            </nav>
+        </div>
+    </header>
+    <div class="parent-container">
+        <main>
+            <!-- Primary page content will go here -->
+            <div class="about-div">
+                <h1>Greenville</h1>
+                <p class="about-p">is home to the Greenville County Museum of Art, with works by Southern artists spanning
+                    several centuries. Exhibits at the Upcountry History Museum tell the story of upstate South
+                    Carolina. Falls Park on the Reedy has riverside gardens, a suspension bridge and waterfall views.
+                    Multi-use trails wind around lakes and hills in Paris Mountain State Park, north of the city.</p>
+                <p id="summary">Summary from Google</p>
+            </div>
+            <h2>Quick Facts:</h2>
+                <table class="city-table">
+                    <caption>City Facts</caption>
+                    <thead>
+                    <tr>
+                        <th>City</th>
+                        <th>Population</th>
+                        <th>Year Incorporated</th>
+                        <th>Region</th>
+                        <th>Classification</th>
+                        <th>Avg. Income</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Charleston</td>
+                        <td>150,227</td>
+                        <td>1783</td>
+                        <td>Lowcountry</td>
+                        <td>Urban</td>
+                        <td>$55,890</td>
+                    </tr>
+                        <tr>
+                        <td>Columbia</td>
+                        <td>136,632</td>
+                        <td>1854</td>
+                        <td>Midlands</td>
+                        <td>Urban</td>
+                        <td>$36,422</td>
+                    </tr>
+                    <tr class="highlight-row">
+                        <td>Greenville</td>
+                        <td>70,720</td>
+                        <td>1831</td>
+                        <td>Upstate</td>
+                        <td>Urban</td>
+                        <td>$52,404</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p class="table-p">See <a href="resources.html">Resources</a> for references.</p>
+            <h2>Looking for places to visit?</h2>
+            <p>Here are the most popular places to visit in each region of South Carolina:</p>
+            <div class="city-container">
+                <a class="city-link" href="Charleston.html">
                     <div class="city-1">
-                        <div class="link-div">Columbia</div>
-                    </div>
-                    </a>
-                    <a class="city-link" href="Greenville.html">
-                    <div class="city-2">
-                        <div class="link-div">Greenville</div>
-                    </div>
-                    </a>
-                    <a class="city-link" href="Charleston.html">
-                    <div class="city-3">
                         <div class="link-div">Charleston</div>
                     </div>
-                    </a>
-                </div>
-            </main>
-            <div class="aside-div">
-                <aside id="state-aside">
-                    <!-- Content indirectly related to primary page content will go here -->
-                    <div class="img-div">
-                    <a href="" target="_blank">
-                        Related image
-                    </a>
-                    </div> 
-                        <p></p>
-                </aside>
+                </a>
+                <a class="city-link" href="Columbia.html">
+                    <div class="city-2">
+                        <div class="link-div">Columbia</div>
+                    </div>
+                </a>
+                <a class="city-link" href="Greenville.html">
+                    <div class="city-3">
+                        <div class="link-div">Greenville</div>
+                    </div>
+                </a>
             </div>
-        </div>
-        <hr>
-        <div class="footer-div">
-            <footer>
-                <!-- Author information, source links, and more will go here as needed -->
-                <p>Made by Sam Ferlita for WGU</p>
-                <div class="socials">
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/samuel-ferlita-552921191/">LinkedIn</a></li>
-                        <li><a href="https://github.com/SJFerlita">GitHub</a></li>
-                    </ul>
+        </main>
+        <div class="aside-div">
+            <aside id="state-aside">
+                <!-- Content indirectly related to primary page content will go here -->
+                <div class="img-div">
+                    <a href="https://www.greenvillesc.gov/" target="_blank">
+                        <img class="aside-img" src="images/emmy-gaddy-CjivT9kkuV4-unsplash.jpg" alt="An image of a pedestrian bridge over the Reedy River in Greenville, South Carolina.">
+                    </a>
                 </div>
-            </footer>
+                <p>Learn more at the Greenville City government website.</p>
+                <div class="img-div">
+                    <a href="https://www.visitgreenvillesc.com/" target="_blank">
+                        <img class="aside-img" src="images/jonathan-hanna--kUntKEJ1zw-unsplash.jpg" alt="An image of a pedestrian bridge over the Reedy River in Greenville, South Carolina.">
+                    </a>
+                </div>
+                <p>Looking for things to do in Greenville? Find some here!</p>
+            </aside>
         </div>
-    </body>
+    </div>
+    <hr>
+    <div class="footer-div">
+        <footer>
+            <!-- Author information, source links, and more will go here as needed -->
+            <p>Made by Sam Ferlita for WGU</p>
+            <div class="socials">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/samuel-ferlita-552921191/">LinkedIn</a></li>
+                    <li><a href="https://github.com/SJFerlita">GitHub</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
 </html>
