@@ -247,6 +247,9 @@ nav a:hover,
 aside {
     display: flex;
     flex-direction: column;
+    position: relative;
+    padding-right: 50px;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin: auto;
     min-width: 100px;
@@ -258,7 +261,7 @@ aside {
 
 .aside-img {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     margin: auto;
     width: 225px;
     height: 125px;
